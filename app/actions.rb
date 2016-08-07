@@ -4,6 +4,11 @@ get '/messages' do
   erb :'messages/index'
 end
 
+get '/messages/new' do
+  @message = Message.new
+  erb :'messages/new'
+end
+
 # get '/' do
 #   erb :index
 # end
